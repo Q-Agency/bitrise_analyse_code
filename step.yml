@@ -63,36 +63,36 @@ toolkit:
     entry_file: step.sh
 
 
-inputs:
-  - allow_warnings: true
-    opts:
-      title: "Allows warnings"
-      summary: "Allows warnings"
-      description: "Allows warnings"
-      value_options:
-      - true
-      - false
-      is_required: true
+# inputs:
+#   - allow_warnings: true
+#     opts:
+#       title: "Allows warnings"
+#       summary: "Allows warnings"
+#       description: "Allows warnings"
+#       value_options:
+#       - true
+#       - false
+#       is_required: true
       
-  - allow_alarms: true
-    opts:
-      title: "Allows alarms"
-      summary: "Allows alarms"
-      description: "Allows alarms"
-      value_options:
-      - true
-      - false
-      is_required: true
+#   - allow_alarms: true
+#     opts:
+#       title: "Allows alarms"
+#       summary: "Allows alarms"
+#       description: "Allows alarms"
+#       value_options:
+#       - true
+#       - false
+#       is_required: true
       
-  - allow_errors: false
-    opts:
-      title: "Allows errors"
-      summary: "Allows errors"
-      description: "Allows errors"
-      value_options:
-      - true
-      - false
-      is_required: false
+#   - allow_errors: false
+#     opts:
+#       title: "Allows errors"
+#       summary: "Allows errors"
+#       description: "Allows errors"
+#       value_options:
+#       - true
+#       - false
+#       is_required: false
 
 # outputs:
 #   - ANALYSIS_REPORT: "$REPORT_ANALYSIS"
