@@ -94,10 +94,10 @@ inputs:
       - false
       is_required: false
 
-outputs:
-  - ANALYSIS_REPORT: "$REPORT_ANALYSIS"
-    opts:
-      title: "Report about warnings, alarms and errors."
-      summary: "Report about warnings, alarms and errors."
-      description: "Report about warnings, alarms and errors."
+# outputs:
+#   - ANALYSIS_REPORT: "$REPORT_ANALYSIS"
+#     opts:
+#       title: "Report about warnings, alarms and errors."
+#       summary: "Report about warnings, alarms and errors."
+#       description: "Report about warnings, alarms and errors."
 
