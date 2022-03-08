@@ -6,7 +6,7 @@ app:
   # An example secret param, define it (A_SECRET_PARAM) in .bitrise.secrets.yml
   - A_SECRET_PARAM: $A_SECRET_PARAM
   # If you want to share this step into a StepLib
-  - BITRISE_STEP_ID: browserstack-app-automate-upload
+  - BITRISE_STEP_ID: bitrise_analyse_code
   - BITRISE_STEP_VERSION: "0.0.1"
   - BITRISE_STEP_GIT_CLONE_URL: https://oauth2:glpat-HE3BBWc3nbJxEms5eBy3@gitlab.q-software.com/mobile/bitrise_BS_app_automate_step.git.git
   - MY_STEPLIB_REPO_FORK_GIT_URL: $MY_STEPLIB_REPO_FORK_GIT_URL
