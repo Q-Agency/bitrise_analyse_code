@@ -8,14 +8,14 @@
 # - Bitrise CLI guides: http://devcenter.bitrise.io/bitrise-cli/
 
 title: |-
-  Browserstack Generate Coverage
+  Analyse the code
 summary: |
-  Step to upload app to generate coverage files.
+  Step to upload app to Browserstack app automate
 description: |
-  Step to upload app to generate coverage files.
-website: https://github.com/Q-Agency/bitrise_step_gencov.git
-source_code_url: https://github.com/Q-Agency/bitrise_step_gencov.git
-support_url: https://github.com/Q-Agency/bitrise_step_gencov.git
+  Step to upload ipa, apk or abb files to Browserstack app automate service,. Step outputs Browserstack app url
+website: https://github.com/Q-Agency/bitrise_analyse_code.git
+source_code_url: https://github.com/Q-Agency/bitrise_analyse_code.git
+support_url: https://github.com/Q-Agency/bitrise_analyse_code.git
 host_os_tags:
   - osx-10.10
   - ubuntu-16.04
@@ -63,38 +63,39 @@ toolkit:
     entry_file: step.sh
 
 inputs:
-  - treshold: $GEN_COV_TRESHOLD
+  - allow_warnings: true
     opts:
-      title: "Treshold for code coverage. From 0 to 1.0"
-      summary: "Enter your Browserstack User Name"
-      description: "Enter your Browserstack User Name"
-      type: text
-      is_required: true
-      is_expand: true
-
-  - severity: error
-    opts:
-      title: "Severity for code coverage"
-      summary: "Severity for code coverage"
-      description: "Severity for code coverage"
-      value_options:
-      - error
-      - info
-      is_required: true
-      
-  - with_widgets: true
-    opts:
-      title: "Include widgets"
-      summary: "Include widgets for code coverage"
-      description: "Include widgets for code coverage"
+      title: "Allows warnings"
+      summary: "Allows warnings"
+      description: "Allows warnings"
       value_options:
       - true
       - false
       is_required: true
       
-outputs:
-  - APP_URL: "$BROWSERSTACK_APP_AUTOMATE_IOS_URL"
+  - allow_alarms: true
     opts:
-      title: "Browserstack App Automate App URL"
-      summary: "Url for your Browserstack App Automate app"
-      description: "Url for your Browserstack App Automate app"
+      title: "Allows alarms"
+      summary: "Allows alarms"
+      description: "Allows alarms"
+      value_options:
+      - true
+      - false
+      is_required: true
+      
+  - allow_errors: false
+    opts:
+      title: "Allows errors"
+      summary: "Allows errors"
+      description: "Allows errors"
+      value_options:
+      - true
+      - false
+      is_required: false
+
+outputs:
+  - ANALYSIS_REPORT: "$REPORT_ANALYSIS"
+    opts:
+      title: "Report about warnings, alarms and errors."
+      summary: "Report about warnings, alarms and errors."
+      description: "Report about warnings, alarms and errors."
