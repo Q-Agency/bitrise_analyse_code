@@ -62,7 +62,6 @@ toolkit:
   bash:
     entry_file: step.sh
 
-
 # inputs:
 #   - allow_warnings: true
 #     opts:
@@ -100,4 +99,3 @@ toolkit:
 #       title: "Report about warnings, alarms and errors."
 #       summary: "Report about warnings, alarms and errors."
 #       description: "Report about warnings, alarms and errors."
-
