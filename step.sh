@@ -9,11 +9,9 @@ warnings_count=`echo $linter_report | grep -o 'WARNING' | wc -l`
 alarm_count=`echo $linter_report | grep -o 'ALARM' | wc -l`
 error_count=`echo $linter_report | grep -o 'ERROR' | wc -l`
 
-report= "Errors: $error_count, Alarms: $alarm_count, Warnings: $warnings_count"
-
-
-envman add --key REPORT_ANALYSIS --value "$report"
-echo $report
+# report= "Errors: $error_count, Alarms: $alarm_count, Warnings: $warnings_count"
+# envman add --key REPORT_ANALYSIS --value "$report"
+# echo $report
 
 if [ $error_count -gt 0 ] && [ $allow_errors != true ]; then
     echo "Please fix all errors."
