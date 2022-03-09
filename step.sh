@@ -9,9 +9,8 @@ warnings_count=`echo $linter_report | grep -o 'WARNING' | wc -l`
 alarm_count=`echo $linter_report | grep -o 'ALARM' | wc -l`
 error_count=`echo $linter_report | grep -o 'ERROR' | wc -l`
 
-# report= `echo {$error_count} {$alarm_count} {$warnings_count}`
+report= `echo "Errors: {$error_count}, Alarms: {$alarm_count}, Warnings: {$warnings_count}"`
 
-report= `echo 3 4 5`
 
 envman add --key REPORT_ANALYSIS --value "$report"
 echo $report
