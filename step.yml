@@ -8,7 +8,7 @@
 # - Bitrise CLI guides: http://devcenter.bitrise.io/bitrise-cli/
 
 title: |-
-  Analyse the code
+  Q Analyse the code
 summary: |
   Step to upload app to Browserstack app automate
 description: |
